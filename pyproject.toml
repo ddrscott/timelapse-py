@@ -1,0 +1,29 @@
+[project]
+name = "timelapse-py"
+version = "0.1.0"
+description = "A CLI tool generating timelapses images"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+  {name = "Scott Pierce", email = "ddrscott@gmail.com"},
+]
+dependencies = [
+    "click>=8.3.0",
+    "cv2-enumerate-cameras>=1.3.0",
+    "opencv-python>=4.12.0.88",
+    "rich>=14.2.0",
+]
+
+[project.scripts]
+timelapse = "timelapse:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "pytest-mock>=3.10.0",
+]
+
+[tool.pytest]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
