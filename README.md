@@ -1,4 +1,4 @@
-# Timelapse Python
+# Time Lapse Python
 
 A CLI tool for capturing timelapse images from cameras and generating videos.
 
